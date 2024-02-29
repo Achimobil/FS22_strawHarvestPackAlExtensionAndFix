@@ -46,7 +46,7 @@ function AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, sizeX
 		autoLoadObject.sizeY = sizeY
 		autoLoadObject.sizeZ = sizeZ
 		autoLoadObject.type = type
-		autoLoadObject.nameTranslated = "HB - " .. g_i18n:getText(shopName, "FS22_strawHarvestPack")
+		autoLoadObject.nameTranslated = g_i18n:getText(shopName, "FS22_strawHarvestPack")
 		if withVehicleTrigger then
 			autoLoadObject.pickupTriggerCollisionMask = CollisionFlag.TRIGGER_VEHICLE;
 		end
