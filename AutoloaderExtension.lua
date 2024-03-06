@@ -29,7 +29,7 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 	-- add check method and size for every additional type
 	if (name == "strawPallets") then
 		local function CheckType(object)
-			if string.find(object.configFileName, "FS22_strawHarvestPack") then return true end
+			if object.configFileName ~= nil and string.find(object.configFileName, "FS22_strawHarvestPack") then return true end
 			
 			return false;
 		end
