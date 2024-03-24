@@ -4,7 +4,8 @@
 	<version>1.0.0.0</version>
 
 	<title>
-		<en>Straw Harvest Pack AL Extension And Fix</en>
+		<en>Straw Harvest Pack AL Extension</en>
+		<de>Straw Harvest Pack AL Erweiterung</de>
 	</title>
 
 	<description>
@@ -31,15 +32,15 @@ Zusätzlich korrigiert dieser Mod die folgenden Fehler im Straw Harvest Pack:
 	<iconFilename>icon_strawHarvest.dds</iconFilename>
 	<multiplayer supported="true"/>
 
-    <extraSourceFiles>
-        <sourceFile filename="scripts/ChangeOtherMods.lua"/>
-        <sourceFile filename="AutoloaderExtension.lua"/>
-    </extraSourceFiles>
+	<extraSourceFiles>
+		<sourceFile filename="scripts/ChangeOtherMods.lua"/>
+		<sourceFile filename="AutoloaderExtension.lua"/>
+	</extraSourceFiles>
 
 
 	<dependencies>
-        <dependency>FS22_strawHarvestPack</dependency>
-        <dependency>FS22_aPalletAutoLoader</dependency>
-    </dependencies>
+		<dependency>FS22_strawHarvestPack</dependency>
+		<dependency>FS22_aPalletAutoLoader</dependency>
+	</dependencies>
 
 </modDesc>
