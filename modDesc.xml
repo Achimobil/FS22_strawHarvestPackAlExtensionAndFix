@@ -9,23 +9,15 @@
 	</title>
 
 	<description>
-		<en><![CDATA[Straw Harvest Pack AL Extension and Error Fix
+		<en><![CDATA[Straw Harvest Pack AL Extension
 
 Mainly this mod is an extension to load the pallets with the pallet autoloader as seperate loading type.
 Both mods are required to use this mod.
-
-Additional this mod corrects the following errors in the Straw Harvest Pack:
-- Add the missing pallet definition to the filltype so it is spawnable over EDC
-- Put the hay and straw pallet in the required products category so it is usable for pallet storages on silo base (revamp)
 ]]></en>
-		<de><![CDATA[Straw Harvest Pack AL Erweiterung und Fehlerbehebung
+		<de><![CDATA[Straw Harvest Pack AL Erweiterung
 
 Dieser Mod ist hauptsächlich eine Erweiterung, um die Paletten mit dem Palettenautoloader als separaten Ladetyp zu laden.
 Beide Mods werden benötigt, um diesen Mod zu verwenden.
-
-Zusätzlich korrigiert dieser Mod die folgenden Fehler im Straw Harvest Pack:
-- Fehlende Paletten Definitionen für die Filltypes werden eingefügt, damit diese aus Lagern und mit dem EDC gespawned werden können
-- Füge die Heu- und Strohpaletts in die Kategorie "PRODCUTS" ein, so dass sie für Palettenlager auf der Silobasis verwendet werden kann (revamp)
 ]]></de>
 	</description>
 
@@ -33,7 +25,6 @@ Zusätzlich korrigiert dieser Mod die folgenden Fehler im Straw Harvest Pack:
 	<multiplayer supported="true"/>
 
 	<extraSourceFiles>
-		<sourceFile filename="scripts/ChangeOtherMods.lua"/>
 		<sourceFile filename="AutoloaderExtension.lua"/>
 	</extraSourceFiles>
 

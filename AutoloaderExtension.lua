@@ -17,12 +17,12 @@ No copy and use in own mods allowed.
 Das verändern und wiederöffentlichen, auch in Teilen, ist untersagt und wird abgemahnt.
 ]]
 
-AutoloaderExtensionHofBergmann = {}
+AutoloaderExtensionStrawHarvest = {}
 
 
 ---
-function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadObject, name)
--- print("AutoloaderExtensionHofBergmann:AddSupportedObjects");
+function AutoloaderExtensionStrawHarvest:AddSupportedObjects(superFunc, autoLoadObject, name)
+-- print("AutoloaderExtensionStrawHarvest:AddSupportedObjects");
 	-- call for default types
 	superFunc(self, autoLoadObject, name)
 	
@@ -35,13 +35,13 @@ function AutoloaderExtensionHofBergmann:AddSupportedObjects(superFunc, autoLoadO
 		end
 		autoLoadObject.CheckTypeMethod = CheckType
 
-		AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, 1.5, 1.3, 1, "pallet", "fillType_strawPellets", false, true)
+		AutoloaderExtensionStrawHarvest:fillAutoLoadObject(autoLoadObject, 1.5, 1.3, 1, "pallet", "fillType_strawPellets", false, true)
 	end
 	
 end
-FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects, AutoloaderExtensionHofBergmann.AddSupportedObjects)
+FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.AddSupportedObjects, AutoloaderExtensionStrawHarvest.AddSupportedObjects)
 
-function AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, sizeX, sizeY, sizeZ, type, shopName, withVehicleTrigger, stackable)
+function AutoloaderExtensionStrawHarvest:fillAutoLoadObject(autoLoadObject, sizeX, sizeY, sizeZ, type, shopName, withVehicleTrigger, stackable)
 		autoLoadObject.sizeX = sizeX
 		autoLoadObject.sizeY = sizeY
 		autoLoadObject.sizeZ = sizeZ
@@ -54,8 +54,8 @@ function AutoloaderExtensionHofBergmann:fillAutoLoadObject(autoLoadObject, sizeX
 end
 
 
-function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
--- print("AutoloaderExtensionHofBergmann:AddSupportedObjects");
+function AutoloaderExtensionStrawHarvest:CreateAvailableTypeList(superFunc)
+-- print("AutoloaderExtensionStrawHarvest:AddSupportedObjects");
 	-- get default list
 	local types = superFunc(self)
 	
@@ -66,4 +66,4 @@ function AutoloaderExtensionHofBergmann:CreateAvailableTypeList(superFunc)
 	return types;
 end
 
-FS22_aPalletAutoLoader.APalletAutoLoader.CreateAvailableTypeList = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.CreateAvailableTypeList, AutoloaderExtensionHofBergmann.CreateAvailableTypeList)
+FS22_aPalletAutoLoader.APalletAutoLoader.CreateAvailableTypeList = Utils.overwrittenFunction(FS22_aPalletAutoLoader.APalletAutoLoader.CreateAvailableTypeList, AutoloaderExtensionStrawHarvest.CreateAvailableTypeList)
